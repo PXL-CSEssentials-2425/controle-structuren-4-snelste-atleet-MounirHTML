@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="newButton" Content="Nieuw" HorizontalAlignment="Left" Margin="619,45,0,0" VerticalAlignment="Top" Width="149" Height="66" Grid.ColumnSpan="2" Click="newButton_Click"/>
+        <Button x:Name="atleetButton" Content="Snelste Atleet" HorizontalAlignment="Left" Margin="619,143,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.149,0.43" Height="46" Width="149" Grid.ColumnSpan="2" Click="atleetButton_Click"/>
+        <Button x:Name="closeButton" Content="Afsluiten" HorizontalAlignment="Left" Margin="619,293,0,0" VerticalAlignment="Top" Height="46" RenderTransformOrigin="0.257,0.827" Width="149" Grid.ColumnSpan="2" Click="closeButton_Click"/>
+        <Button x:Name="deleteButton" Content="Wissen" HorizontalAlignment="Left" Margin="619,217,0,0" VerticalAlignment="Top" Height="46" Width="149" Grid.ColumnSpan="2" Click="deleteButton_Click"/>
+        <TextBox x:Name="textBoxNaam" HorizontalAlignment="Left" Margin="220,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBoxSec" HorizontalAlignment="Left" Margin="220,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" Grid.ColumnSpan="2"/>
+        <Label x:Name="naamAtleet" Content="Naam atleet:" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="74,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.385,0.545"/>
+        <Label x:Name="secondenLabel" Content="Aantal seconden: " Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="74,121,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.385,0.545"/>
+        <TextBox x:Name="Resultaat" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="74,188,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="462" Height="198" Background="#FFD5D5D5"/>
 
     </Grid>
 </Window>
